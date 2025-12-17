@@ -3,15 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarvesh Nandola - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        section {
+            padding: 4rem 2rem;
+            margin-top: 60px; /* Account for fixed header */
+            min-height: 100vh;
+        }
+        #home {
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #home h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        #home p {
+            font-size: 1.2rem;
+        }
+        #about, #experience, #projects, #contact {
+            background-color: #fff;
+            margin: 2rem auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .experience-item, .project-item {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        .experience-item h3, .project-item h3 {
+            margin-bottom: 0.5rem;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .contact-info div {
+            text-align: center;
+            margin: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            #home h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Sarvesh Nandola</h1>
-        <p>Cybersecurity Professional</p>
         <nav>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -19,50 +122,97 @@
             </ul>
         </nav>
     </header>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm [Your Name], a passionate developer and engineer.</p>
+        <a href="#about" style="color: #fff; text-decoration: none; padding: 0.5rem 1rem; background-color: #555; border-radius: 5px;">Learn More</a>
+    </section>
+
     <section id="about">
         <h2>About Me</h2>
-        <p>Cybersecurity professional with expertise in Vulnerability Assessment and Penetration Testing (VAPT), digital forensics, and threat analysis. Proficient in Python scripting and penetration testing with real-world project experience and a strong learning mindset.</p>
+        <img src="https://via.placeholder.com/150" alt="Profile Picture"> <!-- Replace with your image URL -->
+        <p>Hello! I'm [Your Name], a dedicated professional with a background in software development and engineering. I love building innovative solutions and have experience in various technologies. When I'm not coding, I enjoy [your hobbies, e.g., hiking and reading].</p>
+        <p>Skills: HTML, CSS, JavaScript, Python, React, etc.</p>
     </section>
+
     <section id="experience">
         <h2>Experience</h2>
-        <h3>Codelancer Cybersecurity and Forensic Pvt Ltd</h3>
-        <p>Cybersecurity & Forensic Expert (Dec 2024 – Present)</p>
-        <ul>
-            <li>Conducted forensic investigations using tools like UltData, UFED, and MOBILedit.</li>
-            <li>Performed data extraction, email forensics, and hash value certification for legal compliance.</li>
-            <li>Assisted clients in cybersecurity assessments and coordinated with technical teams for security solutions.</li>
-            <li>Conducted vulnerability assessments and recommended security enhancements.</li>
-        </ul>
-        <h3>BDS Services Pvt Ltd</h3>
-        <p>Customer Interaction Executive (Jan 2020 – Mar 2021)</p>
-        <ul>
-            <li>Conducted outbound calls to international clients on behalf of IQPC and WBR.</li>
-            <li>Managed professional client interactions, focusing on data verification, lead qualification, and event registrations.</li>
-            <li>Maintained and updated customer databases with accuracy using Excel spreadsheets for data entry and tracking.</li>
-        </ul>
-        <h3>Conneqt Business Solutions</h3>
-        <p>Customer Service Associate (Sep 2018 – Nov 2019)</p>
-        <ul>
-            <li>Provided voice-based customer support to LIC policyholders, addressing queries related to policy details, premium payments, and claims.</li>
-            <li>Maintained records of customer interactions in CRM systems and ensured timely resolution.</li>
-            <li>Achieved key performance indicators (KPIs) including First Call Resolution (FCR) and Customer Satisfaction (CSAT).</li>
-        </ul>
+        <div class="experience-item">
+            <h3>Software Engineer at XYZ Corp</h3>
+            <p>Jan 2023 - Present</p>
+            <p>Developed web applications using React and Node.js. Led a team of 5 developers on a major project.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Junior Developer at ABC Tech</h3>
+            <p>Jun 2021 - Dec 2022</p>
+            <p>Built responsive websites and collaborated on backend APIs. Improved site performance by 30%.</p>
+        </div>
+        <!-- New experiences added here -->
+        <div class="experience-item">
+            <h3>Crowe Advisory Service - Presales(Solution) Engineer</h3>
+            <p>June 2025 - Dec 2025</p>
+            <p>Focused on presales solutions, providing technical expertise and demos for advisory services.</p>
+        </div>
+        <div class="experience-item">
+            <h3>And in Bds</h3>
+            <p>Dec 2024 – June 2025</p>
+            <p>Worked on business development strategies and client relations in the BDS sector.</p>
+        </div>
     </section>
+
     <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li>Bash Scripting for Automated Data Backup (RedHat Linux) - Developed a Bash script for automated data backups, ensuring secure storage at scheduled intervals.</li>
-            <li>Email Scraper (emailscreper.py) - Created a Python script to extract email addresses from web pages using BeautifulSoup and requests.</li>
-            <li>Port Scanner (portscanner.py) - Built a network scanning tool that detects open ports and services for security assessments.</li>
-            <li>Backdoor (backdoor.py) - Demonstrated security vulnerabilities using socket programming to simulate remote access risks.</li>
-            <li>Brute Force Attack Script (bruteforce.py) - Designed a penetration testing tool to test password strength and security policies.</li>
-            <li>Directory Enumeration Tool (directories.py) - Identified hidden directories and files, assisting in web application security assessments.</li>
-        </ul>
+        <div class="project-item">
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio site built with HTML, CSS, and JS. <a href="#">View Project</a></p>
+        </div>
+        <div class="project-item">
+            <h3>E-commerce App</h3>
+            <p>A full-stack e-commerce platform using React and Express. <a href="#">View Project</a></p>
+        </div>
+        <div class="project-item">
+            <h3>Weather Dashboard</h3>
+            <p>A simple weather app with API integration. <a href="#">View Project</a></p>
+        </div>
     </section>
-    <footer id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:sarveshnandola@outlook.com">sarveshnandola@outlook.com</a></p>
-        <p>Phone: +91 9326370661</p>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p>your.email@example.com</p>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <p>+1 (123) 456-7890</p>
+            </div>
+            <div>
+                <i class="fab fa-linkedin"></i>
+                <p><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></p>
+            </div>
+            <div>
+                <i class="fab fa-github"></i>
+                <p><a href="https://github.com/yourusername">GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 [Your Name]. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
