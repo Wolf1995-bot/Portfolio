@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Sarvesh Nandola | Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
             background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
         }
         header {
-            background-color: #333;
+            background: #222;
             color: #fff;
             padding: 1rem 0;
             position: fixed;
@@ -27,7 +26,6 @@
             list-style: none;
             display: flex;
             justify-content: center;
-            margin: 0;
             padding: 0;
         }
         nav ul li {
@@ -36,183 +34,61 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            padding: 0.5rem 1rem;
-            transition: background-color 0.3s;
-        }
-        nav ul li a:hover {
-            background-color: #555;
-            border-radius: 5px;
         }
         section {
             padding: 4rem 2rem;
-            margin-top: 60px; /* Account for fixed header */
-            min-height: 100vh;
+            margin-top: 70px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            background: #fff;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         #home {
             background: linear-gradient(to right, #667eea, #764ba2);
             color: #fff;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        #home h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
-        #home p {
-            font-size: 1.2rem;
-        }
-        #about, #experience, #projects, #contact {
-            background-color: #fff;
-            margin: 2rem auto;
-            max-width: 800px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        #about img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
+            min-height: 100vh;
         }
         .experience-item, .project-item {
-            margin-bottom: 2rem;
-            padding: 1rem;
-            border-bottom: 1px solid #eee;
-        }
-        .experience-item h3, .project-item h3 {
-            margin-bottom: 0.5rem;
-        }
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .contact-info div {
-            text-align: center;
-            margin: 1rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
         footer {
+            background: #222;
+            color: #fff;
             text-align: center;
             padding: 1rem;
-            background-color: #333;
-            color: #fff;
-        }
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-            }
-            #home h1 {
-                font-size: 2rem;
-            }
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I'm [Your Name], a passionate developer and engineer.</p>
-        <a href="#about" style="color: #fff; text-decoration: none; padding: 0.5rem 1rem; background-color: #555; border-radius: 5px;">Learn More</a>
-    </section>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="https://via.placeholder.com/150" alt="Profile Picture"> <!-- Replace with your image URL -->
-        <p>Hello! I'm [Your Name], a dedicated professional with a background in software development and engineering. I love building innovative solutions and have experience in various technologies. When I'm not coding, I enjoy [your hobbies, e.g., hiking and reading].</p>
-        <p>Skills: HTML, CSS, JavaScript, Python, React, etc.</p>
-    </section>
+<section id="home">
+    <h1>Sarvesh Nandola</h1>
+    <p>Cybersecurity & Pre-Sales Engineer | VAPT | Digital Forensics</p>
+</section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Software Engineer at XYZ Corp</h3>
-            <p>Jan 2023 - Present</p>
-            <p>Developed web applications using React and Node.js. Led a team of 5 developers on a major project.</p>
-        </div>
-        <div class="experience-item">
-            <h3>Junior Developer at ABC Tech</h3>
-            <p>Jun 2021 - Dec 2022</p>
-            <p>Built responsive websites and collaborated on backend APIs. Improved site performance by 30%.</p>
-        </div>
-        <!-- New experiences added here -->
-        <div class="experience-item">
-            <h3>Crowe Advisory Service - Presales(Solution) Engineer</h3>
-            <p>June 2025 - Dec 2025</p>
-            <p>Focused on presales solutions, providing technical expertise and demos for advisory services.</p>
-        </div>
-        <div class="experience-item">
-            <h3>And in Bds</h3>
-            <p>Dec 2024 – June 2025</p>
-            <p>Worked on business development strategies and client relations in the BDS sector.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>Portfolio Website</h3>
-            <p>A responsive portfolio site built with HTML, CSS, and JS. <a href="#">View Project</a></p>
-        </div>
-        <div class="project-item">
-            <h3>E-commerce App</h3>
-            <p>A full-stack e-commerce platform using React and Express. <a href="#">View Project</a></p>
-        </div>
-        <div class="project-item">
-            <h3>Weather Dashboard</h3>
-            <p>A simple weather app with API integration. <a href="#">View Project</a></p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <div>
-                <i class="fas fa-envelope"></i>
-                <p>your.email@example.com</p>
-            </div>
-            <div>
-                <i class="fas fa-phone"></i>
-                <p>+1 (123) 456-7890</p>
-            </div>
-            <div>
-                <i class="fab fa-linkedin"></i>
-                <p><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></p>
-            </div>
-            <div>
-                <i class="fab fa-github"></i>
-                <p><a href="https://github.com/yourusername">GitHub</a></p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 [Your Name]. All rights reserved.</p>
-    </footer>
-
-    <script>
-        // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Cybersecurity & Pre-Sales professional with hands-on experience in
+        Web Application Security, API testing, Vulnerability Assessment,
+        and Digital Forensics. Skilled in identifying OWASP Top 10
+        vulnerabilities using Burp Suite, Nessus, Nmap, and OWASP ZAP.
